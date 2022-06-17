@@ -1,6 +1,6 @@
 import { combineReducers } from "redux"
-import filtersReducer from "../components/Filters/FiltersSlide"
-import todoReducer from "../components/TodoList/TodoSlide"
+import filtersSlice from "../components/Filters/filtersSlice"
+import todoListSlice from "../components/TodoList/todoSlice"
 
 
 // const rootReducer = (state ={}, action) => {
@@ -11,8 +11,8 @@ import todoReducer from "../components/TodoList/TodoSlide"
 // }
 
 const rootReducer = combineReducers({
-    filters: filtersReducer,
-    todoList: todoReducer,
+    filters: filtersSlice.reducer,
+    todoList: todoListSlice.reducer,
 })
 
 export default rootReducer
